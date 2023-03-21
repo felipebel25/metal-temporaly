@@ -1,13 +1,12 @@
 import { fonts } from '@/themes/fonts';
-import { makeStyles } from '@mui/styles';
 
-
-export const useStyles = makeStyles(({
+export const styles = {
     links: {
         color: '#FFFFFF',
         opacity: '0.6',
         margin: "0 1.25rem",
         fontFamily: fonts.secondary,
+        fontSize: "1.6rem",
         fontWeight: 500,
         position: 'relative',
         textDecoration: 'none',
@@ -60,4 +59,4 @@ export const useStyles = makeStyles(({
     }
 
 
-}));
+}

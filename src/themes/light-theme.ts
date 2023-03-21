@@ -4,15 +4,15 @@ import { fonts } from './fonts';
 
 export const lightTheme = createTheme({
   palette: {
-    mode: 'light',
+    mode: 'dark',
     primary: {
-      main: '#1E1E1E'
+      main: '#141414'
     },
     secondary: {
-      main: '#3A64D8'
+      main: '#ffff'
     },
     info: {
-      main: '#fff'
+      main: '#181818'
     }
   },
   components: {
@@ -36,6 +36,10 @@ export const lightTheme = createTheme({
 
     MuiTypography: {
       styleOverrides: {
+        root:{
+          color: 'white',
+          fontFamily: fonts.primary
+        }, 
         h1: {
           fontSize: 30,
           fontWeight: 600
@@ -53,7 +57,7 @@ export const lightTheme = createTheme({
 
     MuiButton: {
       defaultProps: {
-        variant: 'contained',
+        variant: 'outlined',
         size: 'small',
         disableElevation: true,
         color: 'info'
@@ -63,11 +67,17 @@ export const lightTheme = createTheme({
           textTransform: 'none',
           fontFamily: fonts.secondary,
           fontWeight: 600,
+          fontSize: "1.4rem",
           boxShadow: 'none',
+          color: "white",
           borderRadius: 0,
+          padding: "0.8rem 1.5rem",
+          margin: "1.25rem 0",
           border: "1px solid white",
           ":hover": {
-            transition: 'all 0.3s ease-in-out'
+          border: "1px solid white",
+            transition: 'all 0.3s ease-in-out',
+            opacity: "0.5"
           }
         }
       }
@@ -82,7 +92,7 @@ export const lightTheme = createTheme({
           borderRadius: '10px',
         }
       }
-    }
+    },
 
   }
 });

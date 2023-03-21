@@ -1,13 +1,14 @@
-import { Box, Button, Link } from "@mui/material"
-import { useStyles } from "./stylesHeaderHome"
+import { Box, Button } from "@mui/material"
+
 import Image from "next/image"
 import { LinkHeader } from "@/components/atoms/linkHeader/LinkHeader"
+import { styles } from "./stylesHeaderHome"
+
 
 
 export const HeaderHome = () => {
-    const classes = useStyles()
     return (
-        <Box component={'header'} className={classes.header} >
+        <Box component={'header'} sx={styles.header} >
             {/* ----------------Logo Icon----------------- */}
             <Box>
                 <Image
@@ -18,14 +19,13 @@ export const HeaderHome = () => {
                 />
             </Box>
             {/* -------------------Links------------------ */}
-            <Box className={classes.linksContainer} >
+            <Box sx={styles.linksContainer} >
                 <LinkHeader text="Home" href='' />
                 <LinkHeader text="Shop" href='' />
                 <LinkHeader text="Products line" href='' />
                 <LinkHeader text="Referral  link" href='' />
                 <LinkHeader text="FAQ" href='' />
                 <LinkHeader text="Contact" href='' />
-
                 <Button variant="outlined">
                     Shop now
                 </Button>
