@@ -15,8 +15,8 @@ export const SecondSection = () => {
                                 quality={100}
                                 style={styles.card_black}
                                 src='/images/home/card_white.png'
-                                width={350}
-                                height={220}
+                                width={1080}
+                                height={720}
                             />
                         </Box>
                         <Box sx={styles.container_card_black}>
@@ -25,8 +25,8 @@ export const SecondSection = () => {
                                 quality={100}
                                 style={styles.card_black}
                                 src='/images/home/card_black.png'
-                                width={350}
-                                height={220}
+                                width={1080}
+                                height={720}
                             />
                         </Box>
                     </Box>

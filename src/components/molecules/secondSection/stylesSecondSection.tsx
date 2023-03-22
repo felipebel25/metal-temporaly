@@ -57,11 +57,11 @@ export const styles = {
         boxShadow: '0px 0px 23px 5px rgba(0, 0, 0, 0.19)',
     },
     textBW: {
-        fontSize: "6rem",
+        fontSize: "5rem",
         fontWeight: 200,
     },
     options: {
-        fontSize: "7rem",
+        fontSize: "6rem",
         fontWeight: 400,
         margin:"2% 0"
     },

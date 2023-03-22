@@ -18,9 +18,9 @@ export const BannerSection = () => {
                         alt="bussines card, smart cards, qr code, NFC technology"
                         quality={100}
                         style={{ width: "100%", height: "100%" }}
-                        src='/images/home/zyro-image.png'
-                        width={380}
-                        height={290}
+                        src='/images/home/banner.png'
+                        width={1080}
+                        height={720}
                         layout="responsive"
                     />
                 </Box>
