@@ -22,7 +22,6 @@ export const FourthSection = () => {
         <Typography sx={styles.description}>Aquí iría una fracción de video donde las letras se están grabando con laser (Si es posible con fondo transparente para que tome el color de la landing) Y sustituir este texto por texto real.</Typography>
         <Button>Shop now</Button>
       </Box>
-
     </Box>
   )
 }
