@@ -38,20 +38,22 @@ export const lightTheme = createTheme({
       styleOverrides: {
         root:{
           color: 'white',
-          fontFamily: fonts.primary
+          fontFamily: fonts.primary,
+          fontSize:"1.6rem",
         }, 
         h1: {
           fontSize: 30,
           fontWeight: 600
         },
         h2: {
-          fontSize: 20,
+          fontSize: 40,
           fontWeight: 400
         },
         subtitle1: {
           fontSize: 18,
           fontWeight: 600
-        }
+        },
+        
       }
     },
 

@@ -2,7 +2,7 @@ export const styles = {
     main: {
         backgroundColor: 'primary.main',
         width: "100%",
-        height: "100vh",
+        height: "80vh",
         padding: "2% 5%",
         display: "flex",
         alignItems: "center",

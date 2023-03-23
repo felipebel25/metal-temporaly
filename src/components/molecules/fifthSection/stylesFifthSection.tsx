@@ -2,8 +2,8 @@ export const styles = {
     main: {
         backgroundColor: 'primary.main',
         width: "100%",
-        height: "70vh",
-        padding: "2% 5%",
+        height: "80vh",
+        padding: "0% 5%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -21,7 +21,7 @@ export const styles = {
     },
     imgQrCode:{
         width:"13%",
-        height:"40%",
+        height:"27%",
         marginBottom:"2%"
     }
 }

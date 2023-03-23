@@ -12,7 +12,6 @@ export const styles = {
         // background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
         //  background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
         backgroundRepeat: "no-repeat"
-
     },
     containerFirstSection: {
         height: "100%",
@@ -43,6 +42,6 @@ export const styles = {
     containerImage: {
         width: "50%",
         height: "60%",
-    }
+    },
 
 }
