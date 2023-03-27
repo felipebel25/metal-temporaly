@@ -3,7 +3,8 @@ import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {
-        height: "100vh",
+        height: { xs: "auto", md: "93vh" },
+        minHeight: "450px",
         width: "100%",
         backgroundSize: "cover",
         backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 55%) 0%, rgb(46 46 46) 5%),url(/images/home/background-metal.jpg)",
@@ -20,8 +21,13 @@ export const styles = {
         padding: "2% 5%",
         color: "white",
         display: "flex",
+        minHeight: "450px",
+        flexDirection: { xs: "column", md: 'row' },
         alignItems: "center",
-        justifyContent: 'space-between'
+        justifyContent: { xs: "space-around", md: 'space-between' },
+        textAlign: { xs: "center", md: "left" },
+        pt: { xs: "22%", md: "2%" },
+        pb: { xs: '0' }
 
     },
     containerTitles: {
@@ -29,19 +35,21 @@ export const styles = {
     },
     title: {
         fontFamily: fonts.primary,
-        fontSize: '5rem',
+        fontSize: { xs: "2.5rem", md: '5rem' },
         fontWeight: 500
     },
     subtitle: {
-        fontSize: '4rem',
+        width: { lg: "90%", xl: "60%" },
+        fontSize: { xs: '1.8rem', md: '4rem' },
         fontFamily: fonts.primary,
         fontWeight: 100,
-        width: {lg:"90%" ,xl: "60%"},
+        margin: { xs: "1% 0" }
         // border:'1px solid red',
     },
     containerImage: {
-        width: "50%",
+        width: { xs: "100%", md: "50%" },
         height: "60%",
+        mt: { xs: '2%' }
     },
 
 }

@@ -8,8 +8,8 @@ interface Props {
 
 export const LinkHeader = ({ href = '', text = '' }: Props) => {
     return (
-        <Typography component='a' sx={styles.links}>
-            {text}
-        </Typography>
+        <Typography component='a' sx={text === 'Home' ? styles.linkActive : styles.links}>
+            { text }
+        </Typography >
     )
 }

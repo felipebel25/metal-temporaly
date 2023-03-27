@@ -6,14 +6,16 @@ export const lightTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#141414'
+      main: '#161616',
+      dark:"#141414"
     },
+
     secondary: {
       main: '#ffff'
     },
     info: {
       main: '#181818'
-    }
+    },
   },
   components: {
     MuiLink: {
@@ -36,11 +38,11 @@ export const lightTheme = createTheme({
 
     MuiTypography: {
       styleOverrides: {
-        root:{
+        root: {
           color: 'white',
           fontFamily: fonts.primary,
-          fontSize:"1.6rem",
-        }, 
+          fontSize: "1.6rem",
+        },
         h1: {
           fontSize: 30,
           fontWeight: 600
@@ -53,7 +55,7 @@ export const lightTheme = createTheme({
           fontSize: 18,
           fontWeight: 600
         },
-        
+
       }
     },
 
@@ -77,7 +79,7 @@ export const lightTheme = createTheme({
           margin: "1.25rem 0",
           border: "1px solid white",
           ":hover": {
-          border: "1px solid white",
+            border: "1px solid white",
             transition: 'all 0.3s ease-in-out',
             opacity: "0.5"
           }

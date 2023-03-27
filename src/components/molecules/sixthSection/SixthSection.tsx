@@ -7,9 +7,9 @@ export const SixthSection = () => {
         <Box sx={styles.main}>
             <Box sx={styles.containerSixthSection}>
                 <Box sx={styles.textSection}>
-                    <Typography variant="h2" component='h2'>NFC <strong style={{ fontWeight: 200 }}>Technology</strong></Typography>
+                    <Typography variant="h2" component='h2' sx={styles.nfcTitle}>NFC <strong style={{ fontWeight: 200 }}>Technology</strong></Typography>
                     <Typography sx={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</Typography>
-                    <Button>Shop now</Button>
+                    <Button  target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
                 <Box sx={styles.containerImgSection}>
                     <Box sx={styles.containerImageNfc}>
@@ -26,7 +26,7 @@ export const SixthSection = () => {
                         <Image
                             alt="QR Code, qrcode, qr, custom qr, qrcustom, codeqr"
                             quality={100}
-                            style={styles.imgCard}
+                            style={{ width: "100%", height: "100%" }}
                             src='/images/home/card_fade.png'
                             width={848}
                             height={848}

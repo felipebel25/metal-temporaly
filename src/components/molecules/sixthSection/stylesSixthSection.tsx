@@ -1,6 +1,6 @@
 export const styles = {
     main: {
-        height: "100vh",
+        height: {xs:"auto",md:"auto"},
         width: "100%",
         backgroundSize: "cover",
         backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 55%) 0%, rgb(46 46 46) 5%),url(/images/home/background-metal.jpg)",
@@ -11,7 +11,7 @@ export const styles = {
         backgroundRepeat: "no-repeat",
         display: "flex",
         alignItems: "center",
-        padding: "2% 5%",
+        padding: "7% 5%",
 
     },
     imgCard: {
@@ -22,8 +22,12 @@ export const styles = {
         width: "100%",
         height: "100%",
     },
+    nfcTitle: {
+        fontSize: { xs: "2.5rem", md: "4rem" }
+    },
     textSection: {
-        width: "60%",
+        width: { xs: "95%", md: "60%" },
+        textAlign: { xs: "center", md: "left" }
     },
     containerSixthSection: {
         height: "100%",
@@ -33,30 +37,34 @@ export const styles = {
         color: "white",
         display: "flex",
         alignItems: "center",
-        justifyContent: 'space-between',
+        flexDirection: { xs: "column", md: "row" },
+        justifyContent: { xs: "center", md: 'space-between' },
     },
     containerImgSection: {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
         width: "100%",
+        height: "32%",
+        mr: { xs: "20%", md: "0" }
     },
     containerImages: {
         display: "flex",
         justifyContent: "flex-end",
-        height: "100%",
-        width: "70%",
+        height: { xs: "80%", md: "100%" },
+        width: { xs: "100%", md: "40%" },
         alignItems: "center",
     },
     title: {
     },
     description: {
-        margin: '2% 0'
+        margin: '2% 0',
+        fontSize: { xs: "1.3rem", md: "1.6rem" }
     },
     containerImageNfc: {
-        width: "24%",
+        width: { xs: "34%", md: "22%" },
         position: "relative",
-        left: "35%",
+        left: { xs: "19%", md: "11%" },
         display: "flex",
         alignItems: "center",
         maxWidth: "400px",

@@ -1,27 +1,30 @@
 export const styles = {
     main: {
-        backgroundColor: 'primary.main',
+        backgroundColor: 'primary.dark',
         width: "100%",
-        height: "80vh",
-        padding: "0% 5%",
+        height: "auto",
+        padding: { xs:"7% 5%", md:"2%"},
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        textAlign: "center",
+        
     },
     title: {
-        fontSize: '4rem',
+        fontSize: { xs: "2.5rem", md: '4rem' },
         fontWeight: 200
     },
     description: {
-        width: "40%",
-        fontSize: "1.6rem",
+        width: { xs: "90%", md: "40%" },
+        fontSize: { xs: "1.3rem", md: "1.6rem" },
         textAlign: "center",
-        margin:"3%"
+        margin: "3%"
     },
-    imgQrCode:{
-        width:"13%",
-        height:"27%",
-        marginBottom:"2%"
-    }
+    imgQrCode: {
+        width: {xs:"90%", md:"40%"},
+        height: "100%",
+        marginBottom: "2%",
+    },
+
 }

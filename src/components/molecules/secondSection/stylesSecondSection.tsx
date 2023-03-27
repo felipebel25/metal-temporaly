@@ -3,20 +3,21 @@ import { fonts } from "@/themes/fonts";
 export const styles = {
     main: {
         backgroundColor: 'primary.main',
-        width:"100%",
-        height: "100vh",
-        padding: "2% 5%",
+        width: "100%",
+        height: { md: "90vh" },
+        padding: { xs:"5% 1%", md: "2% 5%" },
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
-        justifyContent: "flex-end",
+        justifyContent: { xs: "center", md: "flex-end" },
     },
     images: {
-        width: "70%",
+        width: { xs: "95%", md: "90%" },
         height: "80%",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: { xs: "row", md: "column" },
         justifyContent: "center",
-        position: "relative",
+        position: { md: "relative" },
         right: "30%",
 
     },
@@ -24,51 +25,62 @@ export const styles = {
         width: "85%",
         height: "85%",
         position: "relative",
-        top: "10%"
+        top: { md: "10%" }
     },
     container_card_black: {
         width: "85%",
         height: "85%",
         position: "relative",
-        bottom: "10.5%",
-        left: "29%",
+        bottom: { md: "10.5%" },
+        left: { md: "29%" },
         zIndex: 2
     },
     card_white: {
-        width: "100%",
-        height: "100%",
+        width: { xs: "120%", md: "100%" },
+        height: { xs: "60%", md: "100%" },
     },
     card_black: {
-        width: "100%",
-        height: "100%",
+        width: { md: "100%" },
+        height: { md: "100%" },
     },
     texts: {
         width: "98%",
         height: "70%",
         position: "relative",
-        right: "10%",
+        right: { md: "10%" },
+        textAlign: { xs: "center", md: "left" },
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: { xs: "center", md: "flex-start" }
     },
     container: {
-        width: "76.6%",
-        height: "70%",
+        width: { xs: "90%", md: "76.6%" },
+        height: { xs: '80%', md: "70%" },
         display: "flex",
         alignItems: "center",
+        flexDirection: { xs: "column-reverse", md: "row" },
         backgroundColor: "info.main",
         boxShadow: '0px 0px 23px 5px rgba(0, 0, 0, 0.19)',
+        padding: { xs: "4% 1%", md: "0" }
     },
     textBW: {
-        fontSize: "5rem",
+        fontSize: { xs: '1.8rem', md: '4rem' },
         fontWeight: 200,
     },
     options: {
-        fontSize: "6rem",
+        fontSize: { xs: "2.5rem", md: "5rem" },
         fontWeight: 400,
-        margin:"2% 0"
+        margin: "2% 0"
     },
     description: {
-        fontSize: '2rem',
+        fontSize: { xs: "1.3rem", md: '1.6rem' },
         fontWeight: 400,
-        maxWidth:"80%",
-        marginBottom:"2%"
+        maxWidth: { md: "85%" },
+        marginBottom: "2%",
+        mt: { xs: "2rem", md: "0" }
+    },
+    button: {
+        width: { xs: "50%", md: "25%" }
     }
 }

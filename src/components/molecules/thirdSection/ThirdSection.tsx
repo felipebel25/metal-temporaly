@@ -1,14 +1,14 @@
 import { Box, Button, Typography } from "@mui/material"
-import { styles } from "./stylesThirdSection"
-import { CheckWhiteIcon } from "../../../../public/images/svg/components/Check"
 import { BulletCheck } from "@/components/atoms/bulletCheck/BulletCheck"
 import Image from "next/image"
+
+import { styles } from "./stylesThirdSection"
 
 export const ThirdSection = () => {
     return (
         <Box sx={styles.main}>
             <Box sx={styles.containerThirdSection}>
-                <Box>
+                <Box sx={styles.containerText}>
                     <Typography variant="h5" sx={styles.textCustomize}>Customize your new</Typography>
                     <Typography variant="h3" sx={styles.textMetalBusiness}>Metal Business Card</Typography>
                     <Box sx={styles.containerBulletChecks} >
@@ -21,7 +21,7 @@ export const ThirdSection = () => {
                             <BulletCheck text="Logo" />
                         </Box>
                     </Box>
-                    <Button>Shop now</Button>
+                    <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
                 <Box sx={styles.containerImages}>
                     <Box sx={styles.containerCardFront}>

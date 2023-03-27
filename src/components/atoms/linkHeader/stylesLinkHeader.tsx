@@ -56,6 +56,40 @@ export const styles = {
             visibility: 'visible',
             transform: 'scaleX(1)',
         },
+    },
+    linkActive: {
+        color: '#FFFFFF',
+        opacity: '1',
+        margin: "0 1.25rem",
+        fontFamily: fonts.secondary,
+        fontSize: "1.6rem",
+        fontWeight: 500,
+        position: 'relative',
+        textDecoration: 'none',
+        cursor: "pointer",
+        '&:hover': {
+            opacity: "1",
+
+            '&::after': {
+                width: '100%',
+                transition: 'width 0.3s ease-in-out',
+            },
+        },
+        '&::before': {
+            content: "''",
+            position: 'absolute',
+            display: 'block',
+            width: '100%',
+            height: '2px',
+            bottom: 0,
+            left: 0,
+            backgroundColor: 'white',
+
+            transform: 'scaleX(1)',
+            transformOrigin: 'top right',
+            transition: 'transform 0.3s ease',
+        },
+
     }
 
 
