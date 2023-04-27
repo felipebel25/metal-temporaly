@@ -59,9 +59,7 @@ export const HeaderHome = () => {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={() => setAnchorEl(null)}
-                MenuListProps={{
-                    'aria-labelledby': 'basic-button',
-                }}
+                MenuListProps={{ 'aria-labelledby': 'basic-button', }}
             >
                 <MenuItem sx={styles.menuItem} onClick={() => {
                     setAnchorEl(null)

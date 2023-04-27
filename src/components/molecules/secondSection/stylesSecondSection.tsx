@@ -1,4 +1,3 @@
-import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {
@@ -56,13 +55,13 @@ export const styles = {
     },
     container: {
         width: { xs: "90%", md: "76.6%" },
-        height: { xs: '80%', md: "70%" },
+        height: { xs: '80%', md: "80%" },
         display: "flex",
         alignItems: "center",
         flexDirection: { xs: "column-reverse", md: "row" },
         backgroundColor: "info.main",
         boxShadow: '0px 0px 23px 5px rgba(0, 0, 0, 0.19)',
-        padding: { xs: "4% 1%", md: "0" }
+        padding: { xs: "4% 1%", md: "0" },
     },
     textBW: {
         fontSize: { xs: '1.8rem', md: '4rem' },

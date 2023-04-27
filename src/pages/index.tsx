@@ -1,8 +1,14 @@
-import { HomeView } from '@/components/organisms/home/home/HomeView'
-import Head from 'next/head'
+import Head from 'next/head';
+import axios from 'axios';
+import { HomeView } from '@/components/organisms/home/home/HomeView';
+import {  IDataStrapi } from '@/interfaces/IDataStrapi';
+export interface PropsData {
+  data: IDataStrapi;
+}
 
-
-export default function HomePage() {
+export default function HomePage({ data }: PropsData) {
+  console.log(data);
+  
   return (
     <>
       <Head>
@@ -11,9 +17,28 @@ export default function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomeView />
-      
+      <HomeView data={data.data.attributes.website_pages.data[0].attributes.sections} />
+
 
     </>
   )
+}
+export  const getStaticProps = async () => {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const config = {
+    headers: { Authorization: `Bearer 52fc2c3a50989323219cf3ab78ccf32d80eb31037faf1cb2c240c151497a7869b00eac118cd625ae16399895020ff0b6e167a72d6ffaa38f29f178238375ee56c84f69cddf6d910667feebd3f443cbaf1f1e21fc3e09f25bfdc1ba12ed005ff4ece88defb9e228eff6e43765902fd1f64fda509a9f63f284bb5546d20409fc77` }
+  };
+  const result= await axios.get(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/websites/3?populate=deep,10`, config)
+  
+  const data = result.data
+
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      data: data,
+    },
+  }
 }

@@ -1,35 +1,44 @@
 import { Box, Button, Typography } from "@mui/material"
 import { BulletCheck } from "@/components/atoms/bulletCheck/BulletCheck"
+
 import Image from "next/image"
+import { PropsSection } from "@/interfaces/IDataStrapi"
+
+import { _STRAPI } from "@/utils/constants"
 
 import { styles } from "./stylesThirdSection"
+import { useInView } from "react-hook-inview"
 
-export const ThirdSection = () => {
+export const ThirdSection = ({ data }: PropsSection) => {
+    console.log(data);
+    const [ref, inView] = useInView({ unobserveOnEnter: true })
+    const validateAnimation = inView ? 'animate__animated animate__fadeInLeft' : ""
+
     return (
-        <Box sx={styles.main}>
+        <Box ref={ref} sx={styles.main}>
             <Box sx={styles.containerThirdSection}>
-                <Box sx={styles.containerText}>
-                    <Typography variant="h5" sx={styles.textCustomize}>Customize your new</Typography>
-                    <Typography variant="h3" sx={styles.textMetalBusiness}>Metal Business Card</Typography>
+                <Box sx={styles.containerText} className={validateAnimation}>
+                    <Typography variant="h5" sx={styles.textCustomize}>{data.subtitle}</Typography>
+                    <Typography variant="h3" sx={styles.textMetalBusiness}>{data.title}</Typography>
                     <Box sx={styles.containerBulletChecks} >
                         <Box sx={{ width: "50%" }}>
-                            <BulletCheck text="Name" />
-                            <BulletCheck text="QR Code" />
+                            <BulletCheck text={data.array_strings![0]} />
+                            <BulletCheck text={data.array_strings![1]} />
                         </Box>
                         <Box sx={{ width: "50%" }}>
-                            <BulletCheck text="Position" />
-                            <BulletCheck text="Logo" />
+                            <BulletCheck text={data.array_strings![2]} />
+                            <BulletCheck text={data.array_strings![3]} />
                         </Box>
                     </Box>
-                    <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
+                    <Button target='_blank' href="https://shop.sam-green.com/shop/">{data.button_text!.text}</Button>
                 </Box>
-                <Box sx={styles.containerImages}>
+                <Box sx={styles.containerImages} className={validateAnimation}>
                     <Box sx={styles.containerCardFront}>
                         <Image
                             alt="bussines card logo, smart cards, qr code, NFC technology"
                             quality={100}
                             style={styles.cards}
-                            src='/images/home/card_black_front.png'
+                            src={`${_STRAPI}${data.images.data[1].attributes.formats.large.url ?? '/images/home/card_black_front.png'}`}
                             width={1080}
                             height={720}
 
@@ -50,7 +59,7 @@ export const ThirdSection = () => {
                             alt="bussines card logo, smart cards, qr code, NFC technology"
                             quality={100}
                             style={styles.imgQr}
-                            src='/images/home/card_black.png'
+                            src={`${_STRAPI}${data.images?.data[0]?.attributes.formats.large.url }` || '/images/home/card_black.png'}
                             width={1080}
                             height={720}
                         />

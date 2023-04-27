@@ -3,12 +3,16 @@ import { FooterHome } from "../footer/FooterHome"
 import { HeaderHome } from "../header/HeaderHome"
 import { MainHome } from "../main/MainHome"
 
-export const HomeView = () => {
-    
+import { PropsPage } from "@/interfaces/IDataStrapi"
+
+
+
+export const HomeView = ({ data }: PropsPage) => {
+
     return (
-        <Box   sx={{ height: "100vh" }}>
+        <Box sx={{ height: "100vh" }}>
             <HeaderHome />
-            <MainHome />
+            <MainHome data={data} />
             <FooterHome />
         </Box>
     )
