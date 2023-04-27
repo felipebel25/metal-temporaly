@@ -33,7 +33,7 @@ export const FooterHome = () => {
                     </Box>
                     <Box sx={styles.contactSectionContact}>
                         <Typography sx={styles.contactTitle}>Email</Typography>
-                        <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://outlook.office.com/mail/deeplink/compose?mailtouri=mailto%3Ainfo%40samgreen.com')} >Hello@samgreen.com</Typography>
+                        <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://outlook.office.com/mail/deeplink/compose?mailtouri=mailto%3Ainfo%40samgreen.com')} >info@samgreen.com</Typography>
                     </Box>
                 </Box>
             </Box>

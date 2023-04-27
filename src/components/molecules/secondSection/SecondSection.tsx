@@ -5,7 +5,7 @@ import { useInView } from "react-hook-inview"
 export const SecondSection = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const size = useMediaQuery('(min-width:600px)')
-    const validateAnimation = size && inView ? 'animate__animated animate__fadeInUp' : "animate__animated animate__fadeIn animate__slower"
+    const validateAnimation = size && inView ? 'animate__animated animate__fadeInUp' : "animate__animated animate__fadeInUp animate__slow"
     return (
         <Box component='main' sx={styles.main}>
             <Box ref={ref} className={validateAnimation} sx={styles.container}>

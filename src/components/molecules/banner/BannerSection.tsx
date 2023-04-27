@@ -4,7 +4,6 @@ import 'animate.css';
 
 
 export const BannerSection = () => {
-
     return (
         <Box sx={styles.main} component='main' >
             <Box sx={styles.containerFirstSection}>

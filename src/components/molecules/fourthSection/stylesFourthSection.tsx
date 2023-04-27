@@ -9,6 +9,7 @@ export const styles = {
         flexDirection: { xs: "column", md: "row" },
         justifyContent: { xs: "center", md: "flex-end" },
         
+
     },
     sectionImage: {
         width: "50%",
@@ -25,12 +26,13 @@ export const styles = {
     title: {
         fontWeight: 400,
         fontSize: { xs: "2.5rem", md: "4rem" },
-        m:{xs:"15% 0", md:"0"}
+        m: { xs: "15% 0", md: "0" },
+        mb: { md: "2rem" }
     },
     description: {
         fontSize: { xs: "1.4rem", md: "1.6rem" },
         margin: "5% 0",
-        mt: { xs: "20%", md: "0" }
+        mt: { xs: "15%", md: "0" }
 
     },
     strong: {
@@ -49,10 +51,12 @@ export const styles = {
         display: { xs: "flex", md: "none" },
         justifyContent: "center",
         margin: "5% auto",
-        width:"100%"
+        width: "100%"
 
     },
     button: {
-        display: { xs: "none", md: "block" }
+        display: { xs: "none", md: "block" },
+
+
     }
 }

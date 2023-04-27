@@ -43,7 +43,7 @@ export const styles = {
 
   },
   button: {
-    ml: "5%"
+    ml: "3.5%"
   },
   menu: {
 
@@ -51,6 +51,13 @@ export const styles = {
   menuItem: {
     width: "100%",
     fontSize: "1.7rem"
+  },
+  affiliate: {
+    display: "flex",
+    alignItems: "center"
+  },
+  textAffiliate: {
+    cursor:"pointer"
   }
 }
 

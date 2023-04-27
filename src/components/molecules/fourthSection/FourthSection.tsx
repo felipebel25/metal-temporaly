@@ -1,10 +1,15 @@
 import { Box, Button, Typography } from "@mui/material"
 import { styles } from "./stylesFourthSection"
+import { useInView } from "react-hook-inview"
 
 export const FourthSection = () => {
+  const [ref, inView] = useInView({ unobserveOnEnter: true })
+  const validateAnimationLeft = inView ? 'animate__animated animate__fadeInLeft' : ""
+  const validateAnimationRight = inView ? 'animate__animated animate__fadeInRight' : ""
+
   return (
     <Box sx={styles.main} component='article'>
-      <Box component='section' sx={styles.sectionImage}>
+      <Box component='section' className={validateAnimationLeft}  sx={styles.sectionImage}  ref={ref}>
         <Box sx={styles.containerImg}>
           <video
             autoPlay
@@ -16,7 +21,7 @@ export const FourthSection = () => {
           </video>
         </Box>
       </Box>
-      <Box component='section' sx={styles.sectionText} >
+      <Box component='section' className={validateAnimationRight} sx={styles.sectionText} >
         <Typography variant="h2" component='h2' sx={styles.title}>Laser <strong style={{ fontWeight: 200 }}>Engraving</strong></Typography>
         <Box sx={styles.containerImgMobile}>
           <video

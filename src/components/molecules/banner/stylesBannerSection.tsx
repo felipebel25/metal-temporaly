@@ -49,7 +49,9 @@ export const styles = {
     containerImage: {
         width: { xs: "100%", md: "50%" },
         height: "60%",
-        mt: { xs: '2%' }
+        mt: { xs: '2%' },
+        maxWidth:"1200px",
+
     },
 
 }

@@ -3,12 +3,18 @@ import { BulletCheck } from "@/components/atoms/bulletCheck/BulletCheck"
 import Image from "next/image"
 
 import { styles } from "./stylesThirdSection"
+import { useInView } from "react-hook-inview"
 
 export const ThirdSection = () => {
+    const [ref, inView] = useInView({ unobserveOnEnter: true })
+    const validateAnimation = inView ? 'animate__animated animate__fadeInLeft' : ""
+    const validateAnimationRight = inView ? 'animate__animated animate__fadeInRight' : ""
+
+
     return (
-        <Box sx={styles.main}>
+        <Box  sx={styles.main}>
             <Box sx={styles.containerThirdSection}>
-                <Box sx={styles.containerText}>
+                <Box  className={validateAnimation} sx={styles.containerText}>
                     <Typography variant="h5" sx={styles.textCustomize}>Customize your new</Typography>
                     <Typography variant="h3" sx={styles.textMetalBusiness}>Metal Business Card</Typography>
                     <Box sx={styles.containerBulletChecks} >
@@ -23,7 +29,7 @@ export const ThirdSection = () => {
                     </Box>
                     <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
-                <Box sx={styles.containerImages}>
+                <Box ref={ref} sx={styles.containerImages}  className={validateAnimationRight}>
                     <Box sx={styles.containerCardFront}>
                         <Image
                             alt="bussines card logo, smart cards, qr code, NFC technology"
