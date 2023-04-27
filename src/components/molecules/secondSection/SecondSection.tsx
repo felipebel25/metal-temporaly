@@ -1,14 +1,17 @@
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, Typography, useMediaQuery } from "@mui/material"
 import { styles } from "./stylesSecondSection"
-import Image from "next/image"
+import { useInView } from "react-hook-inview"
 
 export const SecondSection = () => {
-
+    const sizeImage = useMediaQuery('(min-width:600px)');
+    const [ref, isVisible] = useInView({unobserveOnEnter:false})
+    const animation = sizeImage && isVisible 
+    const animationLeft = animation ? 'animate_animated animationLeft' : 'animate_animated animate_fadeIn'
 
     return (
         <Box component='main' sx={styles.main}>
-            <Box sx={styles.container}>
-                <Box sx={styles.images} >
+            <Box ref={ref}  sx={styles.container}>
+                <Box className={animationLeft} sx={styles.images} >
                     {/* <Box sx={styles.container_card_white}>
                         <Image
                             alt="bussines card, smart cards, qr code, NFC technology"
