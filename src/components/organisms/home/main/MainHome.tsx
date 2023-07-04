@@ -13,8 +13,8 @@ export const MainHome = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-      <FifthSection />
       <SixthSection />
+      <FifthSection />
       <SeventhSection />
     </>
   )

@@ -5,20 +5,25 @@ export const styles = {
         backgroundColor: 'primary.main',
         width: "100%",
         height: { md: "90vh" },
-        padding: { xs:"5% 1%", md: "2% 5%" },
+        padding: { xs: "5% 1%", md: "2% 7.5%" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
-        justifyContent: { xs: "center", md: "flex-end" },
+        justifyContent: 'center',
+
+        // '@media(minWidth: 780px)': {
+        //     width: '80%'
+        // }
     },
     images: {
-        width: { xs: "95%", md: "90%" },
-        height: "80%",
+        width: { xs: "95%", md: "50%" },
+        height: "100%",
         display: "flex",
         flexDirection: { xs: "row", md: "column" },
         justifyContent: "center",
         position: { md: "relative" },
-        right: "30%",
+        right: "0%",
+        padding: "1%"
 
     },
     container_card_white: {
@@ -44,24 +49,25 @@ export const styles = {
         height: { md: "100%" },
     },
     texts: {
-        width: "98%",
+        width: { xs: "90%", md: "50%" },
         height: "70%",
         position: "relative",
-        right: { md: "10%" },
         textAlign: { xs: "center", md: "left" },
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: { xs: "center", md: "flex-start" }
+        alignItems: { xs: "center", md: "flex-start" },
     },
     container: {
-        width: { xs: "90%", md: "76.6%" },
+        width: { xs: "90%", md: "100%" },
+        maxWidth: "2400px",
         height: { xs: '80%', md: "70%" },
         display: "flex",
         alignItems: "center",
+        justifyContent: "space-between",
         flexDirection: { xs: "column-reverse", md: "row" },
-        backgroundColor: "info.main",
-        boxShadow: '0px 0px 23px 5px rgba(0, 0, 0, 0.19)',
+        backgroundColor: "primary.main",
+        boxShadow: '0px 0px 23px 15px rgba(0, 0, 0, 0.19)',
         padding: { xs: "4% 1%", md: "0" }
     },
     textBW: {
@@ -76,7 +82,8 @@ export const styles = {
     description: {
         fontSize: { xs: "1.3rem", md: '1.6rem' },
         fontWeight: 400,
-        maxWidth: { md: "85%" },
+        width: "100%",
+        maxWidth: { xs: "100%", md: "85%" },
         marginBottom: "2%",
         mt: { xs: "2rem", md: "0" }
     },
