@@ -1,9 +1,9 @@
 export const styles = {
     main: {
-        backgroundColor: 'primary.main',
+        backgroundColor: 'primary.dark',
         width: "100%",
         height: { xs: "60%", md: "70vh" },
-        padding: {xs:"2% 5%", md:"2% 3%"},
+        padding: { xs: "2% 5%", md: "2% 3%" },
         display: "flex",
         alignItems: "center",
         justifyContent: "flex-end",
@@ -12,6 +12,7 @@ export const styles = {
         backgroundColor: "info.main",
         boxShadow: '0px 0px 23px 5px rgba(0, 0, 0, 0.19)',
         width: { xs: "90%", md: "75%" },
+        maxWidth: "2000px",
         height: "75%",
         margin: "0 auto",
         display: "flex",
@@ -32,9 +33,10 @@ export const styles = {
 
     },
     description: {
-        textAlign: 'center',
         width: "85%",
+        maxWidth: "1000px",
         margin: "2% 0",
+        textAlign: 'center',
         marginTop: "4%",
         fontSize: { xs: "1.3rem", md: "1.7rem" }
     }
