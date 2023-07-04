@@ -33,7 +33,7 @@ export const SecondSection = () => {
                     <video
                         autoPlay
                         loop
-                        style={{ width: "100%" }}
+                        style={{ width: "100%", height: "100%" }}
                         muted
                     >
                         <source src="/videos/section2.mp4" type="video/mp4" />

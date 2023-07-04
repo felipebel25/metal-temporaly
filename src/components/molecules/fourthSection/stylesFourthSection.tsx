@@ -7,17 +7,18 @@ export const styles = {
         display: "flex",
         alignItems: "center",
         flexDirection: { xs: "column", md: "row" },
-        justifyContent: { xs: "center", md: "flex-end" },
-        
+        justifyContent: 'flex-start',
 
     },
     sectionImage: {
         width: "50%",
+        height: "100%",
         display: "flex",
         justifyContent: "center",
     },
     sectionText: {
         width: { xs: "90%", md: "45%" },
+        maxWidth: '800px',
         height: { xs: "90%", md: "auto" },
         marginRight: { xs: "0", md: "6%" },
         border: "1px solid transparent",
@@ -26,7 +27,7 @@ export const styles = {
     title: {
         fontWeight: 400,
         fontSize: { xs: "2.5rem", md: "4rem" },
-        m: { xs: "15% 0", md: "0" },
+        m: { xs: "6% 0", md: "0" },
         mb: { md: "2rem" }
     },
     description: {
@@ -51,7 +52,8 @@ export const styles = {
         display: { xs: "flex", md: "none" },
         justifyContent: "center",
         margin: "5% auto",
-        width: "100%"
+        padding: "5%",
+        width: "100%",
 
     },
     button: {

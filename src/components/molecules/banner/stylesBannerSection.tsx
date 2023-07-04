@@ -3,30 +3,26 @@ import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {
-        height: { xs: "auto", md: "93vh" },
+        height: { xs: "auto", md: "75vh" },
         minHeight: "450px",
         width: "100%",
-        backgroundSize: "cover",
-        backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 55%) 0%, rgb(46 46 46) 5%),url(/images/home/background-metal.jpg)",
-        backgroundBlendMode: 'overlay',
-        mixBlendMode: 'overlay',
+        backgroundColor: "#161616",
         // background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
         //  background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
-        backgroundRepeat: "no-repeat"
     },
     containerFirstSection: {
         height: "100%",
         width: "100%",
         // border: '1px solid red',
-        padding: "2% 5%",
+        padding: {md:"2% 5%"},
         color: "white",
         display: "flex",
         minHeight: "450px",
         flexDirection: { xs: "column", md: 'row' },
-        alignItems: "center",
-        justifyContent: { xs: "space-around", md: 'space-between' },
+        alignItems: "flex-start",
+        justifyContent: 'center',
         textAlign: { xs: "center", md: "left" },
-        pt: { xs: "22%", md: "2%" },
+        pt: { xs: "10%", md: "5%" },
         pb: { xs: '0' }
 
     },
@@ -47,10 +43,11 @@ export const styles = {
         // border:'1px solid red',
     },
     containerImage: {
-        width: { xs: "100%", md: "50%" },
-        height: "60%",
-        mt: { xs: '2%' },
-        maxWidth:"1200px",
+        width: { xs: "100%", md: "100%" },
+        height: "100%",
+        maxwidth: "1400px",
+        mt: { xs: '0' },
+
 
     },
 

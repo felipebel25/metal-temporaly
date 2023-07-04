@@ -9,7 +9,7 @@ export const FourthSection = () => {
 
   return (
     <Box sx={styles.main} component='article'>
-      <Box component='section' className={validateAnimationLeft}  sx={styles.sectionImage}  ref={ref}>
+      <Box component='section' className={validateAnimationLeft} sx={styles.sectionImage} ref={ref}>
         <Box sx={styles.containerImg}>
           <video
             autoPlay
@@ -27,14 +27,14 @@ export const FourthSection = () => {
           <video
             autoPlay
             loop
-            style={{ width: "100%" }}
+            style={{ width: "100%", height: "100%" }}
             muted
           >
             <source src="/videos/section3.mp4" type="video/mp4" />
           </video>
         </Box>
         <Typography sx={styles.description}>Aquí iría una fracción de video donde las letras se están grabando con laser (Si es posible con fondo transparente para que tome el color de la landing) Y sustituir este texto por texto real.</Typography>
-        <Button  target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
+        <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
       </Box>
     </Box >
   )
