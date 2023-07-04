@@ -41,7 +41,6 @@ export const styles = {
 
     },
     optionContactLink: {
-        border: "1px solid red",
         width: 'auto',
     },
     containerContacts: {

@@ -1,6 +1,6 @@
 export const styles = {
     main: {
-        height: {xs:"auto",md:"auto"},
+        height: { xs: "auto", md: "auto" },
         width: "100%",
         backgroundSize: "cover",
         backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 55%) 0%, rgb(46 46 46) 5%),url(/images/home/background-metal.jpg)",
@@ -30,9 +30,10 @@ export const styles = {
         textAlign: { xs: "center", md: "left" }
     },
     containerSixthSection: {
-        height: "100%",
         width: "100%",
-        // border: '1px solid red',
+        maxWidth: "2400px",
+        height: "100%",
+        margin:"0 auto",
         padding: "2% 5%",
         color: "white",
         display: "flex",
