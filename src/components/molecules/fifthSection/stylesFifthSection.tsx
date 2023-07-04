@@ -1,15 +1,15 @@
 export const styles = {
     main: {
-        backgroundColor: 'primary.dark',
+        backgroundColor: 'primary.main',
         width: "100%",
         height: "auto",
-        padding: { xs:"7% 5%", md:"2%"},
+        padding: { xs: "7% 5%", md: "2%" },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        
+
     },
     title: {
         fontSize: { xs: "2.5rem", md: '4rem' },
@@ -17,12 +17,14 @@ export const styles = {
     },
     description: {
         width: { xs: "90%", md: "40%" },
+        maxWidth: "1000px",
         fontSize: { xs: "1.3rem", md: "1.6rem" },
         textAlign: "center",
-        margin: "3%"
+        margin: "5rem"
     },
     imgQrCode: {
-        width: {xs:"90%", md:"40%"},
+        width: { xs: "90%", md: "40%" },
+        maxWidth: '700px',
         height: "100%",
         marginBottom: "2%",
     },

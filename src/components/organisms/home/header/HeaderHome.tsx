@@ -24,7 +24,7 @@ export const HeaderHome = () => {
         setAnchorEl(null);
         navigateToPublicUrl(url)
     };
-
+    
     return (
         <Box component={'header'} sx={{ ...styles.header }} >
             {/* ----------------Logo Icon----------------- */}
@@ -73,7 +73,6 @@ export const HeaderHome = () => {
                 <MenuItem sx={styles.menuItem} onClick={() => handleClose('https://shop.sam-green.com/contact/')}>Contact</MenuItem>
                 <MenuItem sx={styles.menuItem} onClick={() => handleClose('https://profiles.sam-green.com/auth/login')}>Login</MenuItem>
             </Menu>
-
         </Box>
     )
 }

@@ -9,7 +9,8 @@ export const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: { xs: "3%", md: "0 4%" },
-    backgroundImage: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3799894957983193) 100%)",
+    backgroundColor: 'primary.main'
+    // backgroundImage: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3799894957983193) 100%)",
   },
   headerScroll: {
     width: "100%",
@@ -21,7 +22,6 @@ export const styles = {
     alignItems: "center",
     padding: { xs: "3%", md: "0 4%" },
     backgroundColor: "primary.main",
-    border: "1px solid red",
 
   },
   linksContainer: {
@@ -57,7 +57,7 @@ export const styles = {
     alignItems: "center"
   },
   textAffiliate: {
-    cursor:"pointer"
+    cursor: "pointer"
   }
 }
 
