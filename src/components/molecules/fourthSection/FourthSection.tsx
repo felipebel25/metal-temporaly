@@ -17,7 +17,6 @@ export const FourthSection = () => {
             style={{ width: "85%" }}
             muted
             controls={false}
-
           >
             <source src="/videos/section3.mp4" type="video/mp4" />
           </video>
