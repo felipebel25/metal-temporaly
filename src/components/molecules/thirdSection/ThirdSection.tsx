@@ -12,9 +12,9 @@ export const ThirdSection = () => {
 
 
     return (
-        <Box  sx={styles.main}>
+        <Box sx={styles.main}>
             <Box sx={styles.containerThirdSection}>
-                <Box  className={validateAnimation} sx={styles.containerText}>
+                <Box className={validateAnimation} sx={styles.containerText}>
                     <Typography variant="h5" sx={styles.textCustomize}>Customize your new</Typography>
                     <Typography variant="h3" sx={styles.textMetalBusiness}>Metal Business Card</Typography>
                     <Box sx={styles.containerBulletChecks} >
@@ -29,7 +29,7 @@ export const ThirdSection = () => {
                     </Box>
                     <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
-                <Box ref={ref} sx={styles.containerImages}  className={validateAnimationRight}>
+                <Box ref={ref} sx={styles.containerImages} className={validateAnimationRight}>
                     <Box sx={styles.containerCardFront}>
                         <Image
                             alt="bussines card logo, smart cards, qr code, NFC technology"
@@ -52,14 +52,17 @@ export const ThirdSection = () => {
                             <Box sx={styles.indicationArrow} />
                             <Box sx={styles.indicationsName} />
                         </Box>
-                        <Image
-                            alt="bussines card logo, smart cards, qr code, NFC technology"
-                            quality={100}
-                            style={styles.imgQr}
-                            src='/images/home/card_black.png'
-                            width={1080}
-                            height={720}
-                        />
+                        <Box sx={styles.containerImgQr}>
+                            <Image
+                                alt="bussines card logo, smart cards, qr code, NFC technology"
+                                quality={100}
+                                style={styles.imgQr}
+                                src='/images/home/card_black.png'
+                                width={1080}
+                                height={720}
+                                className="ImageQR"
+                            />
+                        </Box>
                         <Box sx={styles.indicationsQrCard}>
                             <Box sx={styles.indicationsQrCardLogo} />
                             <Box sx={styles.indicationArrow} />

@@ -16,6 +16,8 @@ export const FourthSection = () => {
             loop
             style={{ width: "85%" }}
             muted
+            controls={false}
+
           >
             <source src="/videos/section3.mp4" type="video/mp4" />
           </video>
@@ -27,8 +29,10 @@ export const FourthSection = () => {
           <video
             autoPlay
             loop
-            style={{ width: "100%", height: "100%" }}
             muted
+            controls={false}
+            style={{ width: "100%", height: "100%" }}
+
           >
             <source src="/videos/section3.mp4" type="video/mp4" />
           </video>
