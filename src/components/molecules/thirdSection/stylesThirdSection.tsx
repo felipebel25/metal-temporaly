@@ -46,12 +46,16 @@ export const styles = {
         alignItems: { xs: "center", md: "flex-start" },
         // border: "1px solid red",
     },
+    imgLogoMobile: {
+        width: "25rem",
+        height: "100%",
+    },
     cards: {
         width: "100%",
         // border: '1px solid red',
         height: "100%",
         minWidth: "25rem",
-        maxWidth: "53.875rem",
+        maxWidth: "60.875rem",
 
     },
     containerCardFront: {
@@ -62,7 +66,7 @@ export const styles = {
         display: "flex",
         justifyContent: { xs: "center", sm: "flex-start", md: "flex-start" },
         position: { xs: "relative", sm: "relative", md: "inherit" },
-        left: { xs: "15%", sm: "8%", md: "0" },
+        left: { xs: "0", sm: "8%", md: "0" },
 
     },
     containerCardBack: {
@@ -83,14 +87,14 @@ export const styles = {
         textAlign: { xs: "center", md: 'left' }
     },
     indications: {
-        position: "relative",
+        position: { xs: "absolute", sm: "relative" },
         display: "flex",
         width: '18rem',
         height: '30%',
-        right: "20%",
+        left: { xs: "65%", md: "-16%" },
+        right: { xs: "0", md: "20%" },
         top: "35.5%",
         alignItems: 'center',
-        // border: '1px solid red',
 
     },
     indicationsLogo: {
@@ -115,7 +119,7 @@ export const styles = {
         display: "flex",
         width: { xs: "29%", md: '22rem' },
         height: '40%',
-        right: { xs: "3%", sm: "10%", md: "10%" },
+        right: { xs: "4.3%", sm: "10%", md: "10%" },
         top: "28%",
         alignItems: 'center',
         // border: '1px solid red'
@@ -146,8 +150,14 @@ export const styles = {
     },
     imgQr: {
         minWidth: '21rem',
+        maxWidth: '45rem',
         width: '100%',
-        height: "100%",
+        height: "auto",
+        // border: "1px solid red"
+    },
+    imgQrMobile: {
+        width: '20rem',
+        height: "auto",
 
         // border: "1px solid red"
     },

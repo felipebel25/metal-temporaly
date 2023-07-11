@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, Typography, useMediaQuery } from "@mui/material"
 import { BulletCheck } from "@/components/atoms/bulletCheck/BulletCheck"
 import Image from "next/image"
 
@@ -9,7 +9,7 @@ export const ThirdSection = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const validateAnimation = inView ? 'animate__animated animate__fadeInLeft' : ""
     const validateAnimationRight = inView ? 'animate__animated animate__fadeInRight' : ""
-
+    const size = useMediaQuery('(min-width:600px)')
 
     return (
         <Box sx={styles.main}>
@@ -34,7 +34,7 @@ export const ThirdSection = () => {
                         <Image
                             alt="bussines card logo, smart cards, qr code, NFC technology"
                             quality={100}
-                            style={styles.cards}
+                            style={size ? styles.cards : styles.imgLogoMobile}
                             src='/images/home/card_black_front.png'
                             width={1080}
                             height={720}
@@ -56,11 +56,11 @@ export const ThirdSection = () => {
                             <Image
                                 alt="bussines card logo, smart cards, qr code, NFC technology"
                                 quality={100}
-                                style={styles.imgQr}
+                                style={size ? styles.imgQr : styles.imgQrMobile}
+
                                 src='/images/home/card_black.png'
                                 width={1080}
                                 height={720}
-                                className="ImageQR"
                             />
                         </Box>
                         <Box sx={styles.indicationsQrCard}>
