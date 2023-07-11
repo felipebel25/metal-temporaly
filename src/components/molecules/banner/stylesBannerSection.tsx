@@ -14,7 +14,7 @@ export const styles = {
         height: "100%",
         width: "100%",
         // border: '1px solid red',
-        padding: {md:"2% 5%"},
+        padding: { md: "2% 5%" },
         color: "white",
         display: "flex",
         minHeight: "450px",
@@ -46,6 +46,8 @@ export const styles = {
         width: { xs: "100%", md: "50%" },
         height: "100%",
         maxwidth: "1400px",
+        display: "flex",
+        alignItems: "center",
         mt: { xs: '0' },
 
 

@@ -17,9 +17,9 @@ export const BannerSection = () => {
                     <video
                         autoPlay
                         loop
+                        style={{ width: "100%" }}
                         muted
-                        controls={false}
-                        style={{ width: "100%", height: "100%" }}
+                        // controls={false}
                     >
                         <source src="/videos/banner.mp4" type="video/mp4" />
                     </video>
