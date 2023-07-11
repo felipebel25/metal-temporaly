@@ -35,9 +35,10 @@ export const SecondSection = () => {
                         loop
                         style={{ width: "100%", height: "100%" }}
                         muted
-                    >
-                        <source src="/videos/section2.mp4" type="video/mp4" />
-                    </video>
+                        playsInline={true}
+                        controls={false}
+                        src="/videos/section2.mp4"
+                    />
                 </Box>
                 <Box sx={styles.texts}>
                     <Typography variant="h5" sx={styles.textBW} >Black and White</Typography>
