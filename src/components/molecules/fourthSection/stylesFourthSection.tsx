@@ -1,8 +1,8 @@
 export const styles = {
     main: {
-        backgroundColor: 'primary.main',
         width: "100%",
         height: { xs: "auto", md: "60vh" },
+        backgroundColor: 'primary.main',
         padding: "2% 5%",
         display: "flex",
         alignItems: "center",
