@@ -31,10 +31,9 @@ export const FourthSection = () => {
             muted
             controls={false}
             style={{ width: "100%", height: "100%" }}
-
-          >
-            <source src="/videos/section3.mp4" type="video/mp4" />
-          </video>
+            playsInline={true}
+            src='/videos/section3.mp4'
+          />
         </Box>
         <Typography sx={styles.description}>Aquí iría una fracción de video donde las letras se están grabando con laser (Si es posible con fondo transparente para que tome el color de la landing) Y sustituir este texto por texto real.</Typography>
         <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>

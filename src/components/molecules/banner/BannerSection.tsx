@@ -19,10 +19,10 @@ export const BannerSection = () => {
                         loop
                         style={{ width: "100%" }}
                         muted
-                        // controls={false}
-                    >
-                        <source src="/videos/banner.mp4" type="video/mp4" />
-                    </video>
+                        playsInline={true}
+                        controls={false}
+                        src="/videos/banner.mp4"
+                    />
                 </Box>
             </Box>
         </Box>
