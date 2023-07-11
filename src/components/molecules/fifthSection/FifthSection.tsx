@@ -17,10 +17,9 @@ export const FifthSection = () => {
                     style={{ width: "100%" }}
                     muted
                     controls={false}
-
-                >
-                    <source src="/videos/section4.mp4" type="video/mp4" />
-                </video>
+                    playsInline={true}
+                    src="/videos/section4.mp4"
+                />
             </Box>
             <Button className={validateAnimation} target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
         </Box>
