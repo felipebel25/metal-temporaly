@@ -9,7 +9,6 @@ export const styles = {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-
     },
     title: {
         fontSize: { xs: "2.5rem", md: '4rem' },

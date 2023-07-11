@@ -17,7 +17,10 @@ export const styles = {
 
     },
     contactSectionImage: {
-        width: "50%"
+        width: "50%",
+        display: "flex",
+        mb: { xs: "3%", md: "0" },
+        justifyContent: { xs: "center", md: "flex-start" }
     },
     contactSectionContact: {
         width: "50%"

@@ -19,6 +19,7 @@ export default function App(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="report.css" media="print" />
       </Head>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
