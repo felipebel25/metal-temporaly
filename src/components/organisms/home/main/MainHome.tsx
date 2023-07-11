@@ -5,6 +5,8 @@ import { SecondSection } from "@/components/molecules/secondSection/SecondSectio
 import { SeventhSection } from "@/components/molecules/seventhSection/SeventhSection"
 import { SixthSection } from "@/components/molecules/sixthSection/SixthSection"
 import { ThirdSection } from "@/components/molecules/thirdSection/ThirdSection"
+import { Box } from "@mui/material"
+// import { styles } from "./stylesMainHome"
 
 export const MainHome = () => {
   return (

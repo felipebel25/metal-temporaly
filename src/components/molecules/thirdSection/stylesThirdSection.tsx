@@ -4,26 +4,24 @@ export const styles = {
         minHeight: "500px",
         width: "100%",
         backgroundSize: "cover",
-        backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 55%) 0%, #161616 55%),url(/images/home/background-metal.jpg)",
-        backgroundBlendMode: 'overlay',
-        mixBlendMode: 'overlay',
-        // background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
-        //   background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
+        backgroundImage: "radial-gradient(circle, rgb(0 0 0 / 64%) 39%, rgb(0 0 0 / 60%) 45%),url(/images/home/background-metal.jpg)",
+        //   backgroundBlendMode: 'overlay',
+        //   mixBlendMode: 'overlay',
         backgroundRepeat: "no-repeat",
-         boxShadow: 'inset 0px 10px 20px #161616, inset 0px -10px 20px #161616;'
+        boxShadow: 'inset 0px 10px 20px #161616, inset 0px -10px 20px #161616;',
+
     },
     containerThirdSection: {
         width: "100%",
         maxWidth: "2500px",
         height: '100%',
-        margin:"0 auto",
-        padding: "2% 5%",
+        margin: "0 auto",
+        padding: { xs: "3% 0", md: "2% 5%" },
         color: "white",
         display: "flex",
         alignItems: "center",
         justifyContent: { xs: 'center', md: 'space-between' },
         flexDirection: { xs: 'column', md: "row" },
-
     },
     textCustomize: {
         fontSize: { xs: "1.8rem", md: "4rem" },
@@ -40,31 +38,42 @@ export const styles = {
         margin: "4% 0"
     },
     containerImages: {
-        width: { xs: "80%", md: "40%" },
-        height: { xs: "60%", md: "85%" },
+        width: { xs: "100%", md: "40%" },
+        height: { xs: "70%", md: "85%" },
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-
+        alignItems: { xs: "center", md: "flex-start" },
+        // border: "1px solid red",
     },
     cards: {
         width: "100%",
-        height: "100%"
+        // border: '1px solid red',
+        height: "100%",
+        minWidth: "25rem",
+        maxWidth: "53.875rem",
+
     },
     containerCardFront: {
-        width: "75%",
-        margin: "0 auto",
+        width: { xs: "100%", sm: "55%", md: "80%" },
+        // border: "1px solid red",
+        height: { xs: "50%", md: "45%" },
+        margin: { md: "0 auto" },
         display: "flex",
-        justifyContent: "flex-start"
+        justifyContent: { xs: "center", sm: "flex-start", md: "flex-start" },
+        position: { xs: "relative", sm: "relative", md: "inherit" },
+        left: { xs: "15%", sm: "8%", md: "0" },
 
     },
     containerCardBack: {
-        width: "60%",
+        width: { xs: "100%", md: "98%" },
+        height: { xs: "40%", md: "36%" },
         display: "flex",
-        margin: "0 auto",
+        margin: { md: "0 auto" },
         justifyContent: "flex-start",
         position: "relative",
-        right: { xs: "11rem", md: "17rem" }
+        right: { xs: "", md: "6.8rem" },
+        // border: "1px solid red"
 
     },
     containerText: {
@@ -78,9 +87,11 @@ export const styles = {
         display: "flex",
         width: '18rem',
         height: '30%',
-        right: "23%",
+        right: "20%",
         top: "35.5%",
-        alignItems: 'center'
+        alignItems: 'center',
+        // border: '1px solid red',
+
     },
     indicationsLogo: {
         border: "1px solid white",
@@ -100,13 +111,14 @@ export const styles = {
         marginLeft: "4%"
     },
     indicationsQrCard: {
-        position: "relative",
+        position: { xs: "absolute", md: "relative" },
         display: "flex",
-        width: '22rem',
+        width: { xs: "29%", md: '22rem' },
         height: '40%',
-        right: "15%",
+        right: { xs: "3%", sm: "10%", md: "10%" },
         top: "28%",
         alignItems: 'center',
+        // border: '1px solid red'
     },
     indicationsQrCardLogo: {
         border: "1px solid white",
@@ -115,17 +127,29 @@ export const styles = {
         height: "155%"
     },
     indicationsNameContainer: {
-        position: "relative",
+        position: { xs: "absolute", md: "relative" },
         display: "flex",
-        width: '22rem',
+        width: { xs: "33%", md: '22rem' },
         height: '40%',
-        left: "15%",
+        left: { xs: "2%", sm: "17%", md: "7%" },
         top: "27%",
         alignItems: 'center',
+        // border: "1px solid red"
+    },
+    containerImgQr: {
+        margin: "0 auto",
+        width: { xs: "100%", sm: "35%", md: "100%" },
+        // border: "1px solid blue",
+        display: "flex",
+        alignItems: 'center',
+        justifyContent: "center",
     },
     imgQr: {
-        width: "100%",
-        height: "100%"
+        minWidth: '21rem',
+        width: '100%',
+        height: "100%",
+
+        // border: "1px solid red"
     },
     indicationsName: {
         border: "1px solid white",
@@ -133,8 +157,6 @@ export const styles = {
         width: "4rem",
         height: "125%",
     }
-
-
 
 
 }
