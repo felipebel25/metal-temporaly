@@ -1,4 +1,3 @@
-import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {

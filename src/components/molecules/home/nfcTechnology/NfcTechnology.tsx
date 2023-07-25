@@ -1,9 +1,9 @@
 import { Box, Button, Typography } from "@mui/material"
 import Image from "next/image"
-import { styles } from "./stylesSixthSection"
+import { styles } from "./stylesNfcTechnology"
 import { useInView } from "react-hook-inview"
 
-export const SixthSection = () => {
+export const NfcTechnology = () => {
 
     const [ref, inView] = useInView({ unobserveOnEnter: true })
 

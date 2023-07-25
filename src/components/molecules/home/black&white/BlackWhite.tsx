@@ -1,8 +1,8 @@
 import { Box, Button, Typography, useMediaQuery } from "@mui/material"
-import { styles } from "./stylesSecondSection"
+import { styles } from "./stylesBlackWhite"
 import { useInView } from "react-hook-inview"
 
-export const SecondSection = () => {
+export const BlackWhite = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const size = useMediaQuery('(min-width:600px)')
     const validateAnimation = size && inView ? 'animate__animated animate__fadeInUp' : "animate__animated animate__fadeInUp animate__slow"

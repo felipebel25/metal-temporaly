@@ -1,8 +1,9 @@
-import { Box, Button, Typography, useMediaQuery } from "@mui/material"
-import { styles } from "./stylesSeventhSection"
 import { useInView } from "react-hook-inview"
+import { Box, Button, Typography, useMediaQuery } from "@mui/material"
 
-export const SeventhSection = () => {
+import { styles } from "./stylesGetYourMetal"
+
+export const GetYourMetal = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const size = useMediaQuery('(min-width:600px)')
     const validateAnimation = size && inView ? 'animate__animated animate__fadeInDown' : "animate__animated animate__fadeIn animate__slower"

@@ -1,8 +1,9 @@
 import { Box, Button, Typography } from "@mui/material"
-import { styles } from "./stylesFifthSection"
 import { useInView } from "react-hook-inview"
 
-export const FifthSection = () => {
+import { styles } from "./stylesQrTechnology"
+
+export const QrTechnology = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const validateAnimation = inView ? 'animate__animated animate__fadeInDown' : ""
 

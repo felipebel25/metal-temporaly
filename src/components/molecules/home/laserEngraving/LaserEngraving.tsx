@@ -1,8 +1,8 @@
 import { Box, Button, Typography } from "@mui/material"
-import { styles } from "./stylesFourthSection"
+import { styles } from "./stylesLaserEngraving"
 import { useInView } from "react-hook-inview"
 
-export const FourthSection = () => {
+export const LaserEngraving = () => {
   const [ref, inView] = useInView({ unobserveOnEnter: true })
   const validateAnimationLeft = inView ? 'animate__animated animate__fadeInLeft' : ""
   const validateAnimationRight = inView ? 'animate__animated animate__fadeInRight' : ""
