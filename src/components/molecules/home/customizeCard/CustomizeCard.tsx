@@ -1,11 +1,12 @@
-import { Box, Button, Typography, useMediaQuery } from "@mui/material"
-import { BulletCheck } from "@/components/atoms/bulletCheck/BulletCheck"
-import Image from "next/image"
-
-import { styles } from "./stylesThirdSection"
 import { useInView } from "react-hook-inview"
+import Image from "next/image"
+import { Box, Button, Typography, useMediaQuery } from "@mui/material"
 
-export const ThirdSection = () => {
+import { BulletCheck } from "@/components/atoms/bulletCheck/BulletCheck"
+
+import { styles } from "./stylesCustomizeCard"
+
+export const CustomizeCard = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const validateAnimation = inView ? 'animate__animated animate__fadeInLeft' : ""
     const validateAnimationRight = inView ? 'animate__animated animate__fadeInRight' : ""

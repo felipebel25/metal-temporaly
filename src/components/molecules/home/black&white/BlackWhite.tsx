@@ -1,8 +1,8 @@
 import { Box, Button, Typography, useMediaQuery } from "@mui/material"
-import { styles } from "./stylesSecondSection"
+import { styles } from "./stylesBlackWhite"
 import { useInView } from "react-hook-inview"
 
-export const SecondSection = () => {
+export const BlackWhite = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const size = useMediaQuery('(min-width:600px)')
     const validateAnimation = size && inView ? 'animate__animated animate__fadeInUp' : "animate__animated animate__fadeInUp animate__slow"
@@ -43,7 +43,7 @@ export const SecondSection = () => {
                 <Box sx={styles.texts}>
                     <Typography variant="h5" sx={styles.textBW} >Black and White</Typography>
                     <Typography variant="h3" sx={styles.options}>Options</Typography>
-                    <Typography sx={styles.description} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </Typography>
+                    <Typography sx={styles.description} >Experience the power of sophistication and innovation with our cutting-edge monochrome personal smart cards. These elegantly designed cards are not just a statement of your professionalism, but also a gateway to convenience and security.</Typography>
                     <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
             </Box>

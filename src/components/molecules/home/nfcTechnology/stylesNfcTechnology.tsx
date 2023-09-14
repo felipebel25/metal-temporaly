@@ -33,7 +33,7 @@ export const styles = {
         width: "100%",
         maxWidth: "2400px",
         height: "100%",
-        margin:"0 auto",
+        margin: "0 auto",
         padding: "2% 5%",
         color: "white",
         display: "flex",
@@ -59,7 +59,7 @@ export const styles = {
     title: {
     },
     description: {
-        margin: '2% 0',
+        margin: { xs: "3rem 0", md: '2% 0' },
         fontSize: { xs: "1.3rem", md: "1.6rem" }
     },
     containerImageNfc: {

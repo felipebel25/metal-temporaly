@@ -1,15 +1,19 @@
 import { Box, Button, Typography } from "@mui/material"
-import { styles } from "./stylesFifthSection"
 import { useInView } from "react-hook-inview"
 
-export const FifthSection = () => {
+import { styles } from "./stylesQrTechnology"
+
+export const QrTechnology = () => {
     const [ref, inView] = useInView({ unobserveOnEnter: true })
     const validateAnimation = inView ? 'animate__animated animate__fadeInDown' : ""
 
     return (
         <Box sx={styles.main}>
             <Typography className={validateAnimation} sx={styles.title} ref={ref} variant="h2" component='h2'><strong style={{ fontWeight: 400 }}>QR</strong> Code Technology</Typography>
-            <Typography className={validateAnimation} sx={styles.description}>Sería ideal que el siguiente QR se muestre como en el video que se está armando y pasa desde colores azules hasta blanco con fondo transparente. Y sustituir este texto.</Typography>
+            <Typography className={validateAnimation} sx={styles.description}>Unlock a World of Possibilities with QR-Code Equipped Smart Cards!
+                <br />
+                Effortlessly share your contact details, social media profiles, or business websites with new acquaintances, ensuring you stay connected and memorable.
+            </Typography>
             <Box sx={styles.imgQrCode} className={validateAnimation}>
                 <video
                     autoPlay

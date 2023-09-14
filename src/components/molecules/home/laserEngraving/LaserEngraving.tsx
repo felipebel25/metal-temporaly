@@ -1,8 +1,8 @@
 import { Box, Button, Typography } from "@mui/material"
-import { styles } from "./stylesFourthSection"
+import { styles } from "./stylesLaserEngraving"
 import { useInView } from "react-hook-inview"
 
-export const FourthSection = () => {
+export const LaserEngraving = () => {
   const [ref, inView] = useInView({ unobserveOnEnter: true })
   const validateAnimationLeft = inView ? 'animate__animated animate__fadeInLeft' : ""
   const validateAnimationRight = inView ? 'animate__animated animate__fadeInRight' : ""
@@ -35,7 +35,7 @@ export const FourthSection = () => {
             src='/videos/section3.mp4'
           />
         </Box>
-        <Typography sx={styles.description}>Aquí iría una fracción de video donde las letras se están grabando con laser (Si es posible con fondo transparente para que tome el color de la landing) Y sustituir este texto por texto real.</Typography>
+        <Typography sx={styles.description}> Laser engraving offers unparalleled precision, ensuring that every detail on your smart card is crisp and clear. Your information is etched flawlessly, creating a lasting impression. <br /> Unlike traditional printing methods, laser engraving is resistant to wear and tear. Your smart cards will maintain their pristine appearance, even after years of use.</Typography>
         <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
       </Box>
     </Box >

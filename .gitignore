@@ -40,4 +40,7 @@ yarn.lock
 .htaccess
 
 # vercel
+
+.azuredevops
+.vscode
 .vercel
