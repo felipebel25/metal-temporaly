@@ -36,7 +36,6 @@ export const styles = {
         width: "85%",
         maxWidth: "1000px",
         margin: "2% 0",
-        textAlign: 'center',
         marginTop: "4%",
         fontSize: { xs: "1.3rem", md: "1.7rem" },
         textAlign: { xs: "left", md: "center" }
