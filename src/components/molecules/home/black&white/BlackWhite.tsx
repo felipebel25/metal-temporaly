@@ -43,7 +43,7 @@ export const BlackWhite = () => {
                 <Box sx={styles.texts}>
                     <Typography variant="h5" sx={styles.textBW} >Black and White</Typography>
                     <Typography variant="h3" sx={styles.options}>Options</Typography>
-                    <Typography sx={styles.description} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </Typography>
+                    <Typography sx={styles.description} >Experience the power of sophistication and innovation with our cutting-edge monochrome personal smart cards. These elegantly designed cards are not just a statement of your professionalism, but also a gateway to convenience and security.</Typography>
                     <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
             </Box>
