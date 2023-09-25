@@ -6,7 +6,10 @@ export const styles = {
         backgroundColor: 'primary.dark',
         padding: "1% 5%",
         paddingTop: "2%",
-        paddingBottom: {xs:"20%", md:"0"}
+        paddingBottom: {xs:"20%", md:"0"},
+        '@media(min-width: 768px)': {
+            padding: "0% 700px"
+        }
     },
     contactSection: {
         borderBottom: "0.5px solid #FFFFFF",

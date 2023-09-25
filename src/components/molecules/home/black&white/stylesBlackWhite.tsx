@@ -10,9 +10,9 @@ export const styles = {
         alignItems: "center",
         justifyContent: 'center',
 
-        // '@media(minWidth: 780px)': {
-        //     width: '80%'
-        // }
+        '@media(min-width: 768px)': {
+            padding: "0% 700px"
+        }
     },
     images: {
         width: { xs: "95%", md: "50%" },

@@ -1,4 +1,3 @@
-
 export const styles = {
   header: {
     width: { xs: "100%", md: "99.5%" },
@@ -9,8 +8,10 @@ export const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: { xs: "3%", md: "0 4%" },
-    backgroundColor: 'primary.main'
-    // backgroundImage: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3799894957983193) 100%)",
+    backgroundColor: 'primary.main',
+    '@media(min-width: 768px)': {
+      padding: "0% 700px"
+    }
   },
   headerScroll: {
     width: "100%",

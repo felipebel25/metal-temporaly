@@ -7,8 +7,9 @@ export const styles = {
         height: { xs: "auto", md: "75vh" },
         minHeight: "450px",
         backgroundColor: "primary.main",
-        // background: 'radial-gradient(circle, rgba(167,176,209,0.5284488795518207) 0%, rgba(87,94,118,0) 35%)',
-        //  background: 'radial-gradient(circle, rgba(167,176,209,1) 0%, rgba(87,94,118,0) 15%)',
+        '@media(min-width: 768px)': {
+            padding: "0% 300px"
+        }
     },
     containerFirstSection: {
         height: "100%",
