@@ -4,18 +4,29 @@ export const styles = {
         backgroundColor: 'primary.main',
         width: "100%",
         height: { md: "90vh" },
-        padding: { xs: "5% 1%", md: "2% 7.5%" },
+        maxHeight: "1000px",
+        padding: { xs: "5% 1%", md: "2% 4.5%" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         justifyContent: 'center',
-
-        // '@media(minWidth: 780px)': {
-        //     width: '80%'
-        // }
+        margin: "0 auto",
+        pt: { xl: "0" }
+    },
+    container: {
+        width: { xs: "90%", md: "100%" },
+        maxWidth: "1700px",
+        height: { xs: '80%', md: "70%" },
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexDirection: { xs: "column-reverse", md: "row" },
+        backgroundColor: "primary.main",
+        boxShadow: '0px 0px 23px 15px rgba(0, 0, 0, 0.19)',
+        padding: { xs: "4% 1%", md: "0" }
     },
     images: {
-        width: { xs: "95%", md: "50%" },
+        width: { xs: "95%", sm: "70%", md: "40%" },
         height: "100%",
         display: "flex",
         flexDirection: { xs: "row", md: "column" },
@@ -57,18 +68,7 @@ export const styles = {
         justifyContent: "center",
         alignItems: { xs: "center", md: "flex-start" },
     },
-    container: {
-        width: { xs: "90%", md: "100%" },
-        maxWidth: "2400px",
-        height: { xs: '80%', md: "70%" },
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        flexDirection: { xs: "column-reverse", md: "row" },
-        backgroundColor: "primary.main",
-        boxShadow: '0px 0px 23px 15px rgba(0, 0, 0, 0.19)',
-        padding: { xs: "4% 1%", md: "0" }
-    },
+
     textBW: {
         fontSize: { xs: '1.8rem', md: '4rem' },
         fontWeight: 200,

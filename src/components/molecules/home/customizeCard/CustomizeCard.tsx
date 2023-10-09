@@ -31,7 +31,7 @@ export const CustomizeCard = () => {
                     <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>
                 <Box ref={ref} sx={styles.containerImages} className={validateAnimationRight}>
-                    <Box sx={styles.containerCardFront}>
+                    {/* <Box sx={styles.containerCardFront}>
                         <Image
                             alt="bussines card logo, smart cards, qr code, NFC technology"
                             quality={100}
@@ -46,7 +46,7 @@ export const CustomizeCard = () => {
                             <Box sx={styles.indicationArrow} />
                             <Typography sx={styles.indicationArrowText}>Logo</Typography>
                         </Box>
-                    </Box>
+                    </Box> */}
                     <Box sx={styles.containerCardBack}>
                         <Box sx={styles.indicationsNameContainer}>
                             <Typography sx={styles.indicationArrowText}>Name and Position</Typography>

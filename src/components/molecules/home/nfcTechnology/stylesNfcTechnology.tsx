@@ -12,7 +12,20 @@ export const styles = {
         display: "flex",
         alignItems: "center",
         padding: "7% 5%",
+        maxHeight: { md: "700px" }
 
+    },
+    containerSixthSection: {
+        width: "100%",
+        maxWidth: "1670px",
+        height: "100%",
+        margin: "0 auto",
+        padding: {xs:"2% 5%",sm :"0", md:"2% 0%"},
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        flexDirection: { xs: "column", md: "row" },
+        justifyContent: { xs: "center", md: 'space-between' },
     },
     imgCard: {
         width: "70%",
@@ -29,23 +42,11 @@ export const styles = {
         width: { xs: "95%", md: "60%" },
         textAlign: { xs: "center", md: "left" }
     },
-    containerSixthSection: {
-        width: "100%",
-        maxWidth: "2400px",
-        height: "100%",
-        margin: "0 auto",
-        padding: "2% 5%",
-        color: "white",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: { xs: "column", md: "row" },
-        justifyContent: { xs: "center", md: 'space-between' },
-    },
     containerImgSection: {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
-        width: "100%",
+        width: { xs: "100%", sm: "70%", md: "100%" },
         height: "32%",
         mr: { xs: "20%", md: "0" }
     },

@@ -1,14 +1,21 @@
 export const styles = {
     main: {
         width: "100%",
-        height: { xs: "auto", md: "60vh" },
+        height: { xs: "auto", sm:"auto", md: "60vh" },
         backgroundColor: 'primary.main',
-        padding: "2% 5%",
+        maxHeight: "700px"
+
+    },
+    container: {
+        width: "100%",
+        height: "100%",
         display: "flex",
         alignItems: "center",
         flexDirection: { xs: "column", md: "row" },
         justifyContent: 'flex-start',
-
+        padding: {xs:"2% 5%", xl:"0"},
+        maxWidth: "1800px",
+        margin:"0 auto",
     },
     sectionImage: {
         width: "50%",
@@ -33,7 +40,7 @@ export const styles = {
     description: {
         fontSize: { xs: "1.4rem", md: "1.6rem" },
         margin: "5% 0",
-        mt: { xs: "15%", md: "0" }
+        mt: { xs: "2%", md: "0" }
 
     },
     strong: {
@@ -51,9 +58,9 @@ export const styles = {
     containerImgMobile: {
         display: { xs: "flex", md: "none" },
         justifyContent: "center",
-        margin: "5% auto",
+        margin: "2% auto",
         padding: "5%",
-        width: "100%",
+        width: {xs:"100%", sm:"30rem"},
 
     },
     button: {
