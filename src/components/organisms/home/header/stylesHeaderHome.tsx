@@ -1,17 +1,24 @@
 export const styles = {
   header: {
-    width: { xs: "100%", md: "99.5%" },
-    height: { xs: "10%", md: "8%" },
+    // width: { xs: "100%", md: "99.5%" },
     position: "absolute",
+    left: 0,
+    right: 0,
+    margin: "auto",
+    height: { xs: "10%",md:"10%", xl: "8%" },
     zIndex: 2,
+    backgroundColor: 'primary.main',
+
+
+  },
+  container: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: { xs: "3%", md: "0 4%" },
-    backgroundColor: 'primary.main',
-    '@media(min-width: 768px)': {
-      padding: "0% 700px"
-    }
+    width: "90%",
+    height: "100%",
+    maxWidth: "1670px",
+    margin:"0 auto",
   },
   headerScroll: {
     width: "100%",

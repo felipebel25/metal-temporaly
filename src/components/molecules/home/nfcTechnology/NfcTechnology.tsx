@@ -13,7 +13,7 @@ export const NfcTechnology = () => {
         <Box sx={styles.main}>
             <Box sx={styles.containerSixthSection}>
                 <Box className={validateAnimationLeft} sx={styles.textSection}>
-                    <Typography ref={ref} variant="h2" component='h2' sx={styles.nfcTitle}>NFC <strong style={{ fontWeight: 200 }}>Technology</strong></Typography>
+                    <Typography  variant="h2" component='h2' sx={styles.nfcTitle}>NFC <strong style={{ fontWeight: 200 }}>Technology</strong></Typography>
                     <Typography sx={styles.description}>Unlock Limitless Possibilities with NFC-Enabled Smart Cards!<br /> Exchange contact information, website links, and more effortlessly by tapping your card to a compatible device. Networking has never been this convenient.</Typography>
                     <Button target='_blank' href="https://shop.sam-green.com/shop/">Shop now</Button>
                 </Box>

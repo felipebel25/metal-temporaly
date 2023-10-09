@@ -6,16 +6,15 @@ export const styles = {
         width: "100%",
         height: { xs: "auto", md: "75vh" },
         minHeight: "450px",
+        maxHeight: "800px",
         backgroundColor: "primary.main",
-        '@media(min-width: 768px)': {
-            padding: "0% 300px"
-        }
+
     },
     containerFirstSection: {
         height: "100%",
-        width: "100%",
+        width: "90%",
         // border: '1px solid red',
-        padding: { md: "2% 5%" },
+        padding: { md: "2% 5%", lg: "0", xl: "2% 0%" },
         color: "white",
         display: "flex",
         minHeight: "450px",
@@ -24,7 +23,9 @@ export const styles = {
         justifyContent: 'center',
         textAlign: { xs: "center", md: "left" },
         pt: { xs: "22%", md: "5%" },
-        pb: { xs: '0' }
+        paddingBottom:'0',
+        maxWidth: "1900px",
+        margin: "0 auto",
 
     },
     containerTitles: {

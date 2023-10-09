@@ -2,14 +2,14 @@ import { fonts } from "@/themes/fonts";
 
 export const styles = {
     main: {
-        height: { xs: "75%", md: "28vh" },
+        height: { xs: "60rem", sm: "80rem", md: "28vh" },
         backgroundColor: 'primary.dark',
         padding: "1% 5%",
         paddingTop: "2%",
-        paddingBottom: {xs:"20%", md:"0"},
-        '@media(min-width: 768px)': {
-            padding: "0% 700px"
-        }
+        maxWidth: "2000px",
+        margin: "0 auto",
+        paddingBottom: { xs: "20%", sm: "10%", md: "0" },
+
     },
     contactSection: {
         borderBottom: "0.5px solid #FFFFFF",

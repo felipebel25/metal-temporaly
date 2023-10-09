@@ -9,11 +9,13 @@ export const styles = {
         //   mixBlendMode: 'overlay',
         backgroundRepeat: "no-repeat",
         boxShadow: 'inset 0px 10px 20px #161616, inset 0px -10px 20px #161616;',
+        margin: "0 auto",
+        maxHeight: "750px",
 
     },
     containerThirdSection: {
         width: "100%",
-        maxWidth: "2500px",
+        maxWidth: "1700px",
         height: '100%',
         margin: "0 auto",
         padding: { xs: "3% 0", md: "2% 5%" },
@@ -22,6 +24,10 @@ export const styles = {
         alignItems: "center",
         justifyContent: { xs: 'center', md: 'space-between' },
         flexDirection: { xs: 'column', md: "row" },
+        '@media(min-width: 2000px)': {
+            padding: { xs: "3% 0", md: "0" },
+        },
+        paddingRight: { md: "0" },
     },
     textCustomize: {
         fontSize: { xs: "1.8rem", md: "4rem" },
@@ -38,7 +44,7 @@ export const styles = {
         margin: "4% 0"
     },
     containerImages: {
-        width: { xs: "100%", md: "40%" },
+        width: { xs: "100%", md: "60%" },
         height: { xs: "70%", md: "85%" },
         display: "flex",
         flexDirection: "column",
@@ -70,13 +76,13 @@ export const styles = {
 
     },
     containerCardBack: {
-        width: { xs: "100%", md: "98%" },
-        height: { xs: "40%", md: "36%" },
+        width: { xs: "100%", md: "88%" },
+        height: { xs: "40%", md: "46%" },
         display: "flex",
         margin: { md: "0 auto" },
         justifyContent: "flex-start",
         position: "relative",
-        right: { xs: "", md: "6.8rem" },
+        right: { xs: "", md: "0" },
         // border: "1px solid red"
 
     },
@@ -118,9 +124,9 @@ export const styles = {
         position: { xs: "absolute", md: "relative" },
         display: "flex",
         width: { xs: "29%", md: '22rem' },
-        height: '40%',
-        right: { xs: "4.3%", sm: "10%", md: "10%" },
-        top: "28%",
+        height: {xs: '60%', md:"40%"},
+        right: { xs: "2.3%", sm: "10%", md: "10%",  xl:"12%" },
+        top: {xs:"20%" , md:"30%"},
         alignItems: 'center',
         // border: '1px solid red'
     },
@@ -133,11 +139,14 @@ export const styles = {
     indicationsNameContainer: {
         position: { xs: "absolute", md: "relative" },
         display: "flex",
-        width: { xs: "33%", md: '22rem' },
+        width: { xs: "30%", md: '22rem' },
         height: '40%',
-        left: { xs: "2%", sm: "17%", md: "7%" },
+        left: { xs: "0", sm: "17%", md: "7%" },
         top: "27%",
         alignItems: 'center',
+        '@media(min-width:2000px)':{
+            left:"11%"
+        }
         // border: "1px solid red"
     },
     containerImgQr: {
@@ -156,7 +165,7 @@ export const styles = {
         // border: "1px solid red"
     },
     imgQrMobile: {
-        width: '20rem',
+        width: '65%',
         height: "auto",
 
         // border: "1px solid red"

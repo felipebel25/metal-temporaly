@@ -1,5 +1,5 @@
 import { navigateToPublicUrl } from "@/utils/globalUtils"
-import { Box, SvgIcon, Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 import Image from "next/image"
 // import Link from "next/link"
 import { FacebookIcon, InstagramIcon, TwitterIcon } from "../../../../../public/images/svg/components"
@@ -24,8 +24,8 @@ export const FooterHome = () => {
                 <Box sx={styles.containerContacts}>
                     <Box sx={styles.contactSectionContact}>
                         <Typography sx={styles.contactTitle}>Links</Typography>
-                            <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://shop.sam-green.com/terms-of-service/')} >Terms of service</Typography>
-                            <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://shop.sam-green.com/privacy-policies/')}>Privacy policies</Typography>
+                        <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://shop.sam-green.com/terms-of-service/')} >Terms of service</Typography>
+                        <Typography sx={styles.contactLinks} onClick={() => navigateToPublicUrl('https://shop.sam-green.com/privacy-policies/')}>Privacy policies</Typography>
                     </Box>
                     <Box sx={styles.contactSectionContact}>
                         <Typography sx={styles.contactTitle}>Phone</Typography>
@@ -43,7 +43,7 @@ export const FooterHome = () => {
                 </Box>
                 <Box sx={styles.containerIconsSocialLinks}>
                     <InstagramIcon onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} />
-                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')}  sx={styles.iconSocialLink} />
+                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')} sx={styles.iconSocialLink} />
                 </Box>
             </Box>
 

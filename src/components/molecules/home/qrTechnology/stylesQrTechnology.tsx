@@ -9,6 +9,7 @@ export const styles = {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
+        maxHeight:"1000px"
     },
     title: {
         fontSize: { xs: "2.5rem", md: '4rem' },
@@ -19,7 +20,8 @@ export const styles = {
         maxWidth: "1000px",
         fontSize: { xs: "1.3rem", md: "1.6rem" },
         textAlign: "center",
-        margin: "5rem"
+        margin: "5rem",
+        marginBottom: "0"
     },
     imgQrCode: {
         width: { xs: "90%", md: "40%" },
