@@ -12,8 +12,7 @@ export const styles = {
     },
     containerFirstSection: {
         height: "100%",
-        width: "90%",
-        // border: '1px solid red',
+        width: {xs:"100%", md:"90%"},
         padding: { md: "2% 5%", lg: "0", xl: "2% 0%" },
         color: "white",
         minHeight: "450px",
@@ -45,12 +44,16 @@ export const styles = {
         // border:'1px solid red',
     },
     containerImage: {
-        width: { xs: "100%", md: "50%" },
-        height: "100%",
+        width: { xs: "162vw", sm:"120vw", md: "50%" },
+        height: {xs:"auto", sm:"100%"},
+        position:{xs:"relative", md: "inherit"},
         maxwidth: "1400px",
+
+        mr:{xs:"2rem", md:"0"},
         display: "flex",
         alignItems: "center",
-        mt: { xs: '0' },
+        mt: { xs: '-6.5%', sm:"0" },
+
 
 
     },
