@@ -1,9 +1,10 @@
 import { navigateToPublicUrl } from "@/utils/globalUtils"
 import { Box, Typography } from "@mui/material"
 import Image from "next/image"
-// import Link from "next/link"
-import { FacebookIcon, InstagramIcon, TwitterIcon } from "../../../../../public/images/svg/components"
+
+
 import { styles } from "./stylesFooterHome"
+import { Facebook, Instagram, LinkedIn, WhatsApp, YouTube } from "@mui/icons-material"
 
 export const FooterHome = () => {
     const year = new Date()
@@ -42,11 +43,14 @@ export const FooterHome = () => {
                     <Typography>All rights reserved Samgreen® {year.getFullYear()}</Typography>
                 </Box>
                 <Box sx={styles.containerIconsSocialLinks}>
-                    <InstagramIcon onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} />
-                    <FacebookIcon onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')} sx={styles.iconSocialLink} />
+                    <LinkedIn onClick={() => navigateToPublicUrl('https://www.linkedin.com/company/samgreencorp/')} sx={styles.iconSocialLink} />
+                    <Instagram onClick={() => navigateToPublicUrl('https://www.instagram.com/samgreencorp/')} sx={styles.iconSocialLink} />
+                    <Facebook onClick={() => navigateToPublicUrl('https://www.facebook.com/samgreencorp')} sx={styles.iconSocialLink} />
+                    <YouTube onClick={() => navigateToPublicUrl('https://www.youtube.com/channel/UCCQ0cEorHekmMoL1OXZXYlw')} sx={styles.iconSocialLink} />
+                    <WhatsApp onClick={() => navigateToPublicUrl('https://api.whatsapp.com/send/?phone=19294133080&text&type=phone_number&app_absent=0')} sx={styles.iconSocialLink} />
+
                 </Box>
             </Box>
-
         </Box>
     )
 }
